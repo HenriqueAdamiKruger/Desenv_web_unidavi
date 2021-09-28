@@ -16,14 +16,14 @@
         for ($i = 0; $i < $random; $i++) { 
             echo ('<tr style="border: 1px solid black;">');
             for ($i2 = 0; $i2 < $random; $i2++) { 
-                $matriz[$i2] = rand(0,100);
+                $matriz[$i][$i2] = rand(0,100);
                 echo ('<td style="border: 1px solid black;">');
-                echo ($matriz[$i2]);
+                echo ($matriz[$i][$i2]);
                 echo ('</td>');
             }
             echo ('</tr>');
         }
-        
+           
         echo ('</table>');
     ?>
 </body>
