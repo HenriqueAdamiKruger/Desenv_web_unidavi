@@ -9,21 +9,16 @@
 <body>
     <?php
         $random = rand(10,30);
-        $matriz = array();
 
-        echo ('<table>');
+        echo ('<table border = "1">');
 
         for ($i = 0; $i < $random; $i++) { 
-            echo ('<tr style="border: 1px solid black;">');
+            echo ('<tr>');
             for ($i2 = 0; $i2 < $random; $i2++) { 
-                $matriz[$i][$i2] = rand(0,100);
-                echo ('<td style="border: 1px solid black;">');
-                echo ($matriz[$i][$i2]);
-                echo ('</td>');
+                echo ('<td >'. $matriz[$i][$i2] = rand(0,100) . '</td>');
             }
             echo ('</tr>');
         }
-           
         echo ('</table>');
     ?>
 </body>
